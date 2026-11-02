@@ -1,0 +1,18 @@
+{
+  "name": "commonground-platform",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["client", "server"],
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev --workspace client\" \"npm:dev --workspace server\"",
+    "dev:client": "npm run dev --workspace client",
+    "dev:server": "npm run dev --workspace server",
+    "build": "npm run build --workspace client",
+    "start": "npm run start --workspace client",
+    "seed": "npm run seed --workspace server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "engines": { "node": ">=20.9.0" }
+}
