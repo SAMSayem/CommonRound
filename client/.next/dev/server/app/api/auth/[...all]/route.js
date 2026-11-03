@@ -1,0 +1,13 @@
+var R=require("../../../../chunks/[turbopack]_runtime.js")("server/app/api/auth/[...all]/route.js")
+R.c("server/chunks/[root-of-the-server]__1d52_x76pmu4k._.js")
+R.c("server/chunks/node_modules_next_dist_06038ufb8i79q._.js")
+R.c("server/chunks/node_modules_@better-auth_core_dist_11cl7vzy4shk_._.js")
+R.c("server/chunks/node_modules_better-auth_dist_17y01b29j9__n._.js")
+R.c("server/chunks/node_modules_kysely_dist_0ws2ptdmn187n._.js")
+R.c("server/chunks/node_modules_zod_v4_1gnatvu7gfugd._.js")
+R.c("server/chunks/node_modules_jose_dist_webapi_1yonwmoi6br4o._.js")
+R.c("server/chunks/[root-of-the-server]__11nr1xkf786yx._.js")
+R.c("server/chunks/[root-of-the-server]__1sx0ra69bopcl._.js")
+R.c("server/chunks/client__next-internal_server_app_api_auth_[___all]_route_actions_1-mgsr3wh6yuq.js")
+R.m("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/client/app/api/auth/[...all]/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
+module.exports=R.m("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/client/app/api/auth/[...all]/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports
