@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node --watch src/index.js",
     "start": "node src/index.js",
-    "seed": "node src/scripts/seed.js"
+    "seed": "node src/scripts/seed.js",
+    "check:env": "node src/scripts/check-env.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -17,5 +18,8 @@
     "zod": "^4.1.12",
     "helmet": "^8.1.0",
     "express-rate-limit": "^8.2.1"
+  },
+  "engines": {
+    "node": ">=20.9.0"
   }
 }
