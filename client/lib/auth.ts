@@ -16,9 +16,10 @@ const baseURL = process.env.BETTER_AUTH_URL || "https://common-round-q3fp.vercel
 const googleEnabled = Boolean(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET);
 
 export const auth = betterAuth({
-  appName: "CommonGround",
-  baseURL,
+  baseURL: process.env.BETTER_AUTH_URL,
   secret: process.env.BETTER_AUTH_SECRET,
+
+  // Keep your existing database configuration
   database: mongodbAdapter(mongoClient.db()),
   trustedOrigins: [baseURL, process.env.NEXT_PUBLIC_APP_URL].filter(Boolean) as string[],
   emailAndPassword: {
