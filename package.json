@@ -2,7 +2,10 @@
   "name": "commonground-platform",
   "private": true,
   "version": "1.0.0",
-  "workspaces": ["client", "server"],
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
     "dev": "concurrently -k \"npm:dev --workspace client\" \"npm:dev --workspace server\"",
     "dev:client": "npm run dev --workspace client",
@@ -14,5 +17,10 @@
   "devDependencies": {
     "concurrently": "^9.2.1"
   },
-  "engines": { "node": ">=20.9.0" }
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@better-auth/infra": "^0.4.26"
+  }
 }
