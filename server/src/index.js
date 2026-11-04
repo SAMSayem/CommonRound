@@ -8,7 +8,7 @@ import { connectDatabase, closeDatabase } from "./db.js";
 
 const app = express();
 const port = Number(process.env.PORT || 4000);
-const allowedOrigins = (process.env.CLIENT_URLS || "http://localhost:3000")
+const allowedOrigins = (process.env.CLIENT_URLS || "https://common-round-q3fp.vercel.app")
   .split(",")
   .map((origin) => origin.trim().replace(/\/$/, ""))
   .filter(Boolean);

@@ -12,7 +12,7 @@ const globalForMongo = globalThis as typeof globalThis & { mongoClient?: MongoCl
 const mongoClient = globalForMongo.mongoClient ?? new MongoClient(mongoUri);
 if (process.env.NODE_ENV !== "production") globalForMongo.mongoClient = mongoClient;
 
-const baseURL = process.env.BETTER_AUTH_URL || "http://localhost:3000";
+const baseURL = process.env.BETTER_AUTH_URL || "https://common-round-q3fp.vercel.app";
 const googleEnabled = Boolean(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET);
 
 export const auth = betterAuth({
