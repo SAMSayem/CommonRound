@@ -21,6 +21,6 @@
     "node": ">=20.9.0"
   },
   "dependencies": {
-    "@better-auth/infra": "^0.4.26"
+    "@better-auth/infra": "^0.4.27"
   }
 }

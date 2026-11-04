@@ -1,15 +1,1 @@
-{"timestamp":"00:00:00.596","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:13.091","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:00:13.764","source":"Server","level":"ERROR","message":"⨯ Error: Invalid connection string"}
-{"timestamp":"00:03:58.563","source":"Server","level":"ERROR","message":"⨯ Error: Invalid connection string"}
-{"timestamp":"00:08:39.453","source":"Server","level":"ERROR","message":"⨯ Error: Invalid connection string"}
-{"timestamp":"00:08:50.111","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
-{"timestamp":"00:08:50.181","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
-{"timestamp":"00:08:53.770","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:08:54.370","source":"Server","level":"ERROR","message":"⨯ Error: Invalid connection string"}
-{"timestamp":"00:08:54.508","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:08:54.983","source":"Server","level":"ERROR","message":"⨯ Error: Invalid connection string"}
-{"timestamp":"00:08:55.166","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:08:55.644","source":"Server","level":"ERROR","message":"⨯ Error: Invalid connection string"}
-{"timestamp":"00:08:58.777","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:08:59.256","source":"Server","level":"ERROR","message":"⨯ Error: Invalid connection string"}
+{"timestamp":"00:00:00.285","source":"Server","level":"LOG","message":""}
