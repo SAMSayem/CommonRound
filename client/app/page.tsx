@@ -42,8 +42,8 @@ export default function HomePage() {
         </div>
         <div className="hero-visual">
           <div className="hero-image-frame"><img src="https://s3sdghub-bucket.s3.eu-west-1.amazonaws.com/core-cms/public/styles/media_image_large/public/IMG_0040_copy_2930x1953.jpg?itok=675jcwtg" alt="Volunteers planting saplings together" /><div className="hero-image-caption"><span className="caption-spark">✳</span><span>BETTER DAYS<br /><b>START HERE.</b></span></div></div>
-          <div className="hero-note hero-note-top"><Sprout size={18} /><span>Plant a little hope.</span></div>
-          <div className="hero-note hero-note-bottom"><span className="note-icon"><HeartHandshake size={18} /></span><span><b>One neighbourhood.</b><small>Countless ways to care.</small></span></div>
+          
+          
           <div className="hero-sunburst" aria-hidden="true">✳</div>
           <span className="hero-vertical-label">VOLUNTEER · CONNECT · REPEAT</span>
         </div>

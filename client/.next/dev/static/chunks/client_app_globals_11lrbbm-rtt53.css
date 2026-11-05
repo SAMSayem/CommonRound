@@ -25,7 +25,7 @@
   --muted: #a1aea5;
   --line: #33463b;
   --green: #d9ed71;
-  --green-deep: #c8dd5c;
+  --green-deep: #a8bb51;
   --lime: #cfe568;
   --lime-dark: #b9d34c;
   --coral: #f29472;
@@ -254,7 +254,7 @@ img {
 }
 
 .announcement {
-  color: #dfe9d9;
+  color: #fdf9f9;
   background: var(--green-deep);
   letter-spacing: .17em;
   text-align: center;

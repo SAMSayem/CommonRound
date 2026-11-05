@@ -1,32 +1,68 @@
+
 import { betterAuth } from "better-auth";
 import { mongodbAdapter } from "@better-auth/mongo-adapter";
 import { jwt } from "better-auth/plugins";
 import { MongoClient } from "mongodb";
 
+// MongoDB connection
 const mongoUri = process.env.MONGODB_URI;
+
 if (!mongoUri) {
-  throw new Error("MONGODB_URI is missing. Add it to client/.env.local before starting the app.");
+  throw new Error("MONGODB_URI environment variable is missing");
 }
 
-const globalForMongo = globalThis as typeof globalThis & { mongoClient?: MongoClient };
-const mongoClient = globalForMongo.mongoClient ?? new MongoClient(mongoUri);
-if (process.env.NODE_ENV !== "production") globalForMongo.mongoClient = mongoClient;
+// Reuse MongoDB connection during development
+const globalForMongo = globalThis as typeof globalThis & {
+  mongoClient?: MongoClient;
+};
 
-const baseURL = process.env.BETTER_AUTH_URL || "https://common-round-q3fp.vercel.app";
-const googleEnabled = Boolean(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET);
+const mongoClient =
+  globalForMongo.mongoClient ?? new MongoClient(mongoUri);
 
+if (process.env.NODE_ENV !== "production") {
+  globalForMongo.mongoClient = mongoClient;
+}
+
+// Application URL
+const baseURL =
+  process.env.BETTER_AUTH_URL ||
+  "https://common-round-q3fp.vercel.app";
+
+const secret = process.env.BETTER_AUTH_SECRET;
+
+if (!secret) {
+  throw new Error("BETTER_AUTH_SECRET environment variable is missing");
+}
+
+// Google authentication
+const googleEnabled = Boolean(
+  process.env.GOOGLE_CLIENT_ID &&
+  process.env.GOOGLE_CLIENT_SECRET
+);
+
+// Better Auth configuration
 export const auth = betterAuth({
-  baseURL: process.env.BETTER_AUTH_URL,
-  secret: process.env.BETTER_AUTH_SECRET,
+  baseURL,
+  secret,
 
-  // Keep your existing database configuration
-  database: mongodbAdapter(mongoClient.db()),
-  trustedOrigins: [baseURL, process.env.NEXT_PUBLIC_APP_URL].filter(Boolean) as string[],
+  database: mongodbAdapter(
+    mongoClient.db("commonground"),
+    {
+      client: mongoClient,
+    }
+  ),
+
+  trustedOrigins: [
+    baseURL,
+    "http://localhost:3000",
+  ],
+
   emailAndPassword: {
     enabled: true,
     minPasswordLength: 6,
     maxPasswordLength: 128,
   },
+
   ...(googleEnabled
     ? {
         socialProviders: {
@@ -37,6 +73,7 @@ export const auth = betterAuth({
         },
       }
     : {}),
+
   plugins: [
     jwt({
       jwt: {

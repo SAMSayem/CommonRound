@@ -4,7 +4,7 @@
 
 > The supplied brief describes the target Figma design, but no Figma URL/export was attached to this project workspace. This implementation follows the written requirements and uses an original visual direction; compare it against the actual Figma file and adjust exact spacing/assets if pixel matching is required.
 
-**Live site:** `https://your-commonground-project.vercel.app` *(placeholder — replace this with the real Vercel URL after deployment; this workspace cannot deploy without your Vercel/MongoDB credentials).*
+**Live site:** `https://common-round-q3fp.vercel.app/` *(placeholder — replace this with the real Vercel URL after deployment; this workspace cannot deploy without your Vercel/MongoDB credentials).*
 
 ## Stack
 

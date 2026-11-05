@@ -735,7 +735,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$au
 ;
 ;
 const authClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$client$2f$react$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createAuthClient"])({
-    baseURL: ("TURBOPACK compile-time value", "http://localhost:3000") || "http://localhost:3000",
+    baseURL: ("TURBOPACK compile-time value", "https://common-round-q3fp.vercel.app") || "https://common-round-q3fp.vercel.app",
     plugins: [
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$plugins$2f$jwt$2f$client$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jwtClient"])()
     ]
