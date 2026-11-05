@@ -7,6 +7,7 @@ import eventsRouter from "./routes/events.js";
 import { connectDatabase, closeDatabase } from "./db.js";
 
 const app = express();
+app.set("trust proxy", 1);
 const port = Number(process.env.PORT || 4000);
 const allowedOrigins = (process.env.CLIENT_URLS || "https://common-round-q3fp.vercel.app")
   .split(",")
